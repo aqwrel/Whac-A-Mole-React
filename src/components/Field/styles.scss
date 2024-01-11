@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.field {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    background: $fieldDefault;
+
+    @media all and (max-width: 768px) {
+        width: 25px;
+        height: 25px;
+    }
+
+    &--active {
+        background: $fieldActive;
+    }
+    &--opponent {
+        background: $fieldOpponent;
+    }
+    &--player {
+        background: $fieldPlayer;
+    }
+}
